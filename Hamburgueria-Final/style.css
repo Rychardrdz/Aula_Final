@@ -1,0 +1,614 @@
+/* Zerando os espaços padrões do navegador e deixando tudo alinhadinho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui fica o estilo principal do site inteiro */
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Parte do topo do site */
+header {
+    text-align: center;
+
+    background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+
+    padding: 40px 20px;
+
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título principal */
+header h1 {
+    font-size: 3rem;
+    color: #ff5252;
+    margin-bottom: 10px;
+}
+
+/* Pequena descrição abaixo do título */
+header p {
+    margin-top: 10px;
+    color: #d6d6d6;
+}
+
+/* Área dos botões do menu */
+nav {
+    margin-top: 25px;
+}
+
+/* Botões do menu */
+nav a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    color: white;
+
+    padding: 12px 22px;
+
+    margin: 10px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito quando passa o mouse nos botões */
+nav a:hover {
+    transform: translateY(-5px);
+
+    background: linear-gradient(45deg, #ff3c3c, #ff6b6b);
+
+    box-shadow: 0 8px 20px rgba(255, 82, 82, 0.4);
+}
+
+/* Estilo geral das seções */
+section {
+    background: #1a1a1a;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Título de cada seção */
+section h2 {
+    text-align: center;
+
+    color: #ff5252;
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+}
+
+/* Texto da área sobre nós */
+.sobre-nos p {
+    margin-bottom: 15px;
+    color: #d8d8d8;
+}
+
+/* Área que organiza os cards dos produtos */
+.cards-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+/* Card individual dos lanches */
+.card {
+    background: #242424;
+
+    border: 2px solid #c62828;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito ao passar o mouse no card */
+.card:hover {
+    transform: translateY(-10px);
+
+    border-color: #ff5252;
+
+    box-shadow: 0 10px 25px rgba(255, 82, 82, 0.3);
+}
+
+/* Imagem do produto */
+.card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+/* Parte de texto dentro do card */
+.card-content {
+    padding: 20px;
+}
+
+/* Nome do produto */
+.card h3 {
+    color: #ff5252;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+}
+
+/* Descrição do produto */
+.card p {
+    color: #d6d6d6;
+}
+
+/* Rodapé do card com preço e botão */
+.card-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+/* Valor do produto */
+.preco {
+    color: #ff5252;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+}
+
+/* Botão de adicionar no carrinho */
+.card button {
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 0.95rem;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.4);
+}
+
+/* Efeito do botão quando o mouse passa */
+.card button:hover {
+    transform: translateY(-3px);
+
+    background: linear-gradient(45deg, #ff3c3c, #ff6b6b);
+
+    box-shadow: 0 8px 20px rgba(255, 60, 60, 0.5);
+}
+
+/* Caixa das avaliações */
+article {
+    background: #242424;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    margin-top: 20px;
+
+    border-left: 5px solid #c62828;
+
+    transition: 0.3s;
+}
+
+/* Pequeno efeito ao passar o mouse */
+article:hover {
+    transform: scale(1.02);
+}
+
+/* Nome da pessoa na avaliação */
+article h3 {
+    color: #ff5252;
+
+    margin-bottom: 10px;
+}
+
+/* Organização do formulário */
+.faca-avaliacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos do formulário */
+.faca-avaliacao input,
+.faca-avaliacao textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2c2c2c;
+
+    color: white;
+
+    font-size: 1rem;
+}
+
+/* Área maior para digitar avaliação */
+.faca-avaliacao textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Botão do formulário */
+.faca-avaliacao button {
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    color: white;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Animação do botão */
+.faca-avaliacao button:hover {
+    transform: scale(1.03);
+
+    background: linear-gradient(45deg, #ff3c3c, #ff6b6b);
+}
+
+/* Área dos contatos */
+.contatos p {
+    margin: 10px 0;
+    color: #d8d8d8;
+}
+
+/* Carrinho que fica flutuando na tela */
+.carrinho-flutuante {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 75px;
+    height: 75px;
+
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Cresce um pouco quando passa o mouse */
+.carrinho-flutuante:hover {
+    transform: scale(1.1);
+}
+
+/* Número de itens no carrinho */
+#contador-flutuante {
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #c62828;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+}
+
+/* Fundo escuro quando abre o carrinho */
+.overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 998;
+}
+
+/* Faz o overlay aparecer */
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Menu lateral do carrinho */
+.carrinho-lateral {
+    position: fixed;
+
+    top: 0;
+    right: -450px;
+
+    width: 420px;
+    height: 100vh;
+
+    background: #1a1a1a;
+
+    padding: 25px;
+
+    z-index: 999;
+
+    overflow-y: auto;
+
+    transition: 0.4s;
+}
+
+/* Faz o carrinho deslizar para dentro */
+.carrinho-lateral.ativo {
+    right: 0;
+}
+
+/* Parte de cima do carrinho */
+.topo-carrinho {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+/* Botão de fechar */
+.fechar {
+    background: crimson;
+
+    color: white;
+
+    border: none;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* Cada item dentro do carrinho */
+.item-carrinho {
+    background: #2a2a2a;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* Botão de remover item */
+.item-carrinho button {
+    background: crimson;
+
+    border: none;
+
+    color: white;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* Botão para finalizar pedido */
+.finalizar {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 15px;
+
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.4);
+}
+
+/* Efeito no botão finalizar */
+.finalizar:hover {
+    transform: scale(1.03);
+
+    background: linear-gradient(45deg, #ff3c3c, #ff6b6b);
+
+    box-shadow: 0 10px 25px rgba(255, 60, 60, 0.5);
+}
+
+/* Área do checkout */
+.checkout {
+    display: none;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+/* Inputs do checkout */
+.checkout input,
+.checkout select {
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2a2a2a;
+
+    color: white;
+}
+
+/* Botão para enviar pedido no WhatsApp */
+.enviar-whatsapp {
+    background: linear-gradient(45deg, #00c853, #00e676);
+
+    color: white;
+
+    border: none;
+
+    padding: 16px;
+
+    border-radius: 15px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Efeito do botão WhatsApp */
+.enviar-whatsapp:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4);
+}
+
+/* Rodapé do site */
+footer {
+    text-align: center;
+
+    background: linear-gradient(45deg, #c62828, #ff3c3c);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    margin-top: 30px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajustes para celular */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .carrinho-lateral {
+        width: 100%;
+    }
+}

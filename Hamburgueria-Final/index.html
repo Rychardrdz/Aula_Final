@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Brasa Burguer</title>
+
+</head>
+
+<body>
+
+    <div class="carrinho-flutuante" onclick="abrirCarrinho()">
+
+        🛒
+
+        <span id="contador-flutuante">0</span>
+
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="cabecalho" id="cabecalho">
+
+        <h1>Hamburgueria Brasa Burguer</h1>
+
+        <p><strong>O sabor que conquista!</strong></p>
+
+        <p>
+            Seja bem-vindo à Brasa Burguer, a melhor hamburgueria da região,
+            com hambúrgueres frescos e preparados com muito amor.
+        </p>
+
+        <nav>
+
+            <a href="#sobre-nos">Sobre Nós</a>
+
+            <a href="#combos">Combos</a>
+
+            <a href="#avaliacao">Avaliações</a>
+
+            <a href="#contatos">Contatos</a>
+
+        </nav>
+
+    </header>
+
+    <section class="sobre-nos" id="sobre-nos">
+
+        <h2>Sobre Nós:</h2>
+
+        <p>
+            A nossa <strong>Hamburgueria Brasa Burguer</strong>
+            nasceu em 2026, como parte de um projeto desenvolvido
+            no curso de Web Design da Vocação,
+            unindo criatividade, tecnologia e paixão por hambúrgueres.
+        </p>
+
+        <p>
+            Criamos este espaço com o objetivo de oferecer
+            uma experiência moderna e prática,
+            onde o cliente pode conhecer nossos produtos
+            e montar seu pedido de forma simples e rápida.
+        </p>
+
+        <p>
+            Mesmo sendo um projeto acadêmico,
+            buscamos transmitir a essência de uma hamburgueria real:
+            qualidade, sabor e dedicação.
+        </p>
+
+        <p>
+            Este projeto representa não apenas uma hamburgueria virtual,
+            mas também aprendizado, esforço e evolução no desenvolvimento Web.
+        </p>
+
+    </section>
+
+    <section id="combos">
+
+        <h2>Nosso Cardápio</h2>
+
+        <div class="cards-container">
+
+            <article class="card">
+
+                <img src="img/xburguer.PNG">
+
+                <div class="card-content">
+
+                    <h3>X-Burguer</h3>
+
+                    <p class="descricao">
+                        Hambúrguer artesanal e cheddar.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span class="preco">R$ 22,90</span>
+
+                        <button onclick="adicionarCarrinho('X-Burguer', 22.90)">
+                            + Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/xegg.PNG">
+
+                <div class="card-content">
+
+                    <h3>X-Egg</h3>
+
+                    <p class="descricao">
+                        Hambúrguer artesanal com ovo.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span class="preco">R$ 26,90</span>
+
+                        <button onclick="adicionarCarrinho('X-Egg', 26.90)">
+                            + Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/xbacon.PNG">
+
+                <div class="card-content">
+
+                    <h3>X-Bacon</h3>
+
+                    <p class="descricao">
+                        Bacon crocante e cheddar.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span class="preco">R$ 29,90</span>
+
+                        <button onclick="adicionarCarrinho('X-Bacon', 29.90)">
+                            + Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/xsalada.PNG">
+
+                <div class="card-content">
+
+                    <h3>X-Salada</h3>
+
+                    <p class="descricao">
+                        Alface, tomate e molho especial.
+                    </p>
+
+                    <div class="card-footer">
+
+                        <span class="preco">R$ 24,90</span>
+
+                        <button onclick="adicionarCarrinho('X-Salada', 24.90)">
+                            + Adicionar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="avaliacao" id="avaliacao">
+
+        <h2>Avaliações dos Clientes</h2>
+
+        <div class="cards-container">
+
+            <article class="avaliacao">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "O melhor hambúrguer que já comi!
+                        Sabor incrível e atendimento excelente."
+                    </p>
+
+                    <span>- João Silva</span>
+
+                </div>
+
+            </article>
+
+            <article class="avaliacao">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐</p>
+
+                    <p>
+                        "Ótima qualidade e entrega rápida.
+                        Recomendo para quem ama um bom hambúrguer."
+                    </p>
+
+                    <span>- Maria Oliveira</span>
+
+                </div>
+
+            </article>
+
+            <article class="avaliacao">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "A combinação de sabores é perfeita!
+                        O X-Bacon é simplesmente divino."
+                    </p>
+
+                    <span>- Carlos Pereira</span>
+
+                </div>
+
+            </article>
+
+            <article class="avaliacao">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐</p>
+
+                    <p>
+                        "Adorei a experiência!
+                        O site é fácil de usar e os hambúrgueres são deliciosos."
+                    </p>
+
+                    <span>- Ana Costa</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <section class="carrinho-lateral" id="carrinho">
+
+            <div class="topo-carrinho">
+
+                <h2>🛒 Seu Carrinho</h2>
+
+                <button class="fechar" onclick="fecharCarrinho()">
+                    ✖
+                </button>
+
+            </div>
+
+            <div id="itens-carrinho"></div>
+
+            <div class="total-box">
+
+                <h3 id="total">R$ 0,00</h3>
+
+                <button class="finalizar" onclick="abrirCheckout()">
+                    Finalizar Pedido
+                </button>
+
+            </div>
+
+            <div class="checkout" id="checkout">
+
+                <input type="text" id="nome" placeholder="Seu nome">
+
+                <input type="text" id="telefone" placeholder="Telefone">
+
+                <input type="text" id="cep" placeholder="CEP">
+
+                <input type="text" id="rua" placeholder="Rua">
+
+                <input type="text" id="numero" placeholder="Número">
+
+                <input type="text" id="bairro" placeholder="Bairro">
+
+                <select id="pagamento">
+
+                    <option>Forma de pagamento</option>
+
+                    <option>Pix</option>
+
+                    <option>Cartão</option>
+
+                    <option>Dinheiro</option>
+
+                </select>
+
+                <button class="enviar-whatsapp" onclick="enviarWhatsapp()">
+                    Enviar Pedido no WhatsApp
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer id="contatos">
+
+            <p>📞 (11) 99932-1206</p>
+
+            <p>📸 @Ryckzx7__</p>
+
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
