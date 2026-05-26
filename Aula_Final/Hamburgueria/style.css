@@ -1,17 +1,11 @@
-/* =========================================================
-   RESET
-========================================================= */
-
+/* Zerando os espaços padrões do navegador e deixando tudo alinhadinho */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================================================
-   BODY
-========================================================= */
-
+/* Aqui fica o estilo principal do site inteiro */
 body {
     background: #0f0f0f;
     color: white;
@@ -20,10 +14,7 @@ body {
     padding: 30px;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-
+/* Parte do topo do site */
 header {
     text-align: center;
 
@@ -38,25 +29,25 @@ header {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Título principal */
 header h1 {
     font-size: 3rem;
     color: #ff5252;
     margin-bottom: 10px;
 }
 
+/* Pequena descrição abaixo do título */
 header p {
     margin-top: 10px;
     color: #d6d6d6;
 }
 
-/* =========================================================
-   NAVBAR
-========================================================= */
-
+/* Área dos botões do menu */
 nav {
     margin-top: 25px;
 }
 
+/* Botões do menu */
 nav a {
     display: inline-block;
 
@@ -79,6 +70,7 @@ nav a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Efeito quando passa o mouse nos botões */
 nav a:hover {
     transform: translateY(-5px);
 
@@ -87,10 +79,7 @@ nav a:hover {
     box-shadow: 0 8px 20px rgba(255, 82, 82, 0.4);
 }
 
-/* =========================================================
-   SEÇÕES
-========================================================= */
-
+/* Estilo geral das seções */
 section {
     background: #1a1a1a;
 
@@ -103,6 +92,7 @@ section {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Título de cada seção */
 section h2 {
     text-align: center;
 
@@ -113,19 +103,13 @@ section h2 {
     font-size: 2rem;
 }
 
-/* =========================================================
-   SOBRE NÓS
-========================================================= */
-
+/* Texto da área sobre nós */
 .sobre-nos p {
     margin-bottom: 15px;
     color: #d8d8d8;
 }
 
-/* =========================================================
-   CARDS DOS LANCHES
-========================================================= */
-
+/* Área que organiza os cards dos produtos */
 .cards-container {
     display: grid;
 
@@ -134,6 +118,7 @@ section h2 {
     gap: 25px;
 }
 
+/* Card individual dos lanches */
 .card {
     background: #242424;
 
@@ -148,6 +133,7 @@ section h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Efeito ao passar o mouse no card */
 .card:hover {
     transform: translateY(-10px);
 
@@ -156,6 +142,7 @@ section h2 {
     box-shadow: 0 10px 25px rgba(255, 82, 82, 0.3);
 }
 
+/* Imagem do produto */
 .card img {
     width: 100%;
     height: 220px;
@@ -165,14 +152,12 @@ section h2 {
     transition: 0.3s;
 }
 
-.card img:hover {
-    transform: scale(1.03);
-}
-
+/* Parte de texto dentro do card */
 .card-content {
     padding: 20px;
 }
 
+/* Nome do produto */
 .card h3 {
     color: #ff5252;
 
@@ -181,10 +166,12 @@ section h2 {
     font-size: 1.5rem;
 }
 
+/* Descrição do produto */
 .card p {
     color: #d6d6d6;
 }
 
+/* Rodapé do card com preço e botão */
 .card-footer {
     display: flex;
 
@@ -195,6 +182,7 @@ section h2 {
     margin-top: 20px;
 }
 
+/* Valor do produto */
 .preco {
     color: #ff5252;
 
@@ -203,10 +191,7 @@ section h2 {
     font-weight: bold;
 }
 
-/* =========================================================
-   BOTÃO ADICIONAR
-========================================================= */
-
+/* Botão de adicionar no carrinho */
 .card button {
     background: linear-gradient(45deg, #c62828, #ff3c3c);
 
@@ -229,6 +214,7 @@ section h2 {
     box-shadow: 0 5px 15px rgba(198, 40, 40, 0.4);
 }
 
+/* Efeito do botão quando o mouse passa */
 .card button:hover {
     transform: translateY(-3px);
 
@@ -237,10 +223,7 @@ section h2 {
     box-shadow: 0 8px 20px rgba(255, 60, 60, 0.5);
 }
 
-/* =========================================================
-   AVALIAÇÕES
-========================================================= */
-
+/* Caixa das avaliações */
 article {
     background: #242424;
 
@@ -255,26 +238,26 @@ article {
     transition: 0.3s;
 }
 
+/* Pequeno efeito ao passar o mouse */
 article:hover {
     transform: scale(1.02);
 }
 
+/* Nome da pessoa na avaliação */
 article h3 {
     color: #ff5252;
 
     margin-bottom: 10px;
 }
 
-/* =========================================================
-   FORMULÁRIO
-========================================================= */
-
+/* Organização do formulário */
 .faca-avaliacao form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Campos do formulário */
 .faca-avaliacao input,
 .faca-avaliacao textarea {
     width: 100%;
@@ -292,11 +275,13 @@ article h3 {
     font-size: 1rem;
 }
 
+/* Área maior para digitar avaliação */
 .faca-avaliacao textarea {
     resize: none;
     height: 120px;
 }
 
+/* Botão do formulário */
 .faca-avaliacao button {
     background: linear-gradient(45deg, #c62828, #ff3c3c);
 
@@ -317,25 +302,20 @@ article h3 {
     transition: 0.3s;
 }
 
+/* Animação do botão */
 .faca-avaliacao button:hover {
     transform: scale(1.03);
 
     background: linear-gradient(45deg, #ff3c3c, #ff6b6b);
 }
 
-/* =========================================================
-   CONTATOS
-========================================================= */
-
+/* Área dos contatos */
 .contatos p {
     margin: 10px 0;
     color: #d8d8d8;
 }
 
-/* =========================================================
-   CARRINHO FLUTUANTE
-========================================================= */
-
+/* Carrinho que fica flutuando na tela */
 .carrinho-flutuante {
     position: fixed;
 
@@ -364,10 +344,12 @@ article h3 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
+/* Cresce um pouco quando passa o mouse */
 .carrinho-flutuante:hover {
     transform: scale(1.1);
 }
 
+/* Número de itens no carrinho */
 #contador-flutuante {
     position: absolute;
 
@@ -392,10 +374,7 @@ article h3 {
     font-weight: bold;
 }
 
-/* =========================================================
-   OVERLAY
-========================================================= */
-
+/* Fundo escuro quando abre o carrinho */
 .overlay {
     position: fixed;
 
@@ -411,15 +390,13 @@ article h3 {
     z-index: 998;
 }
 
+/* Faz o overlay aparecer */
 .overlay.ativo {
     opacity: 1;
     visibility: visible;
 }
 
-/* =========================================================
-   CARRINHO LATERAL
-========================================================= */
-
+/* Menu lateral do carrinho */
 .carrinho-lateral {
     position: fixed;
 
@@ -440,10 +417,12 @@ article h3 {
     transition: 0.4s;
 }
 
+/* Faz o carrinho deslizar para dentro */
 .carrinho-lateral.ativo {
     right: 0;
 }
 
+/* Parte de cima do carrinho */
 .topo-carrinho {
     display: flex;
 
@@ -454,6 +433,7 @@ article h3 {
     margin-bottom: 25px;
 }
 
+/* Botão de fechar */
 .fechar {
     background: crimson;
 
@@ -469,6 +449,7 @@ article h3 {
     cursor: pointer;
 }
 
+/* Cada item dentro do carrinho */
 .item-carrinho {
     background: #2a2a2a;
 
@@ -485,6 +466,7 @@ article h3 {
     align-items: center;
 }
 
+/* Botão de remover item */
 .item-carrinho button {
     background: crimson;
 
@@ -500,10 +482,7 @@ article h3 {
     cursor: pointer;
 }
 
-/* =========================================================
-   BOTÃO FINALIZAR
-========================================================= */
-
+/* Botão para finalizar pedido */
 .finalizar {
     width: 100%;
 
@@ -530,6 +509,7 @@ article h3 {
     box-shadow: 0 5px 15px rgba(198, 40, 40, 0.4);
 }
 
+/* Efeito no botão finalizar */
 .finalizar:hover {
     transform: scale(1.03);
 
@@ -538,10 +518,7 @@ article h3 {
     box-shadow: 0 10px 25px rgba(255, 60, 60, 0.5);
 }
 
-/* =========================================================
-   CHECKOUT
-========================================================= */
-
+/* Área do checkout */
 .checkout {
     display: none;
 
@@ -552,6 +529,7 @@ article h3 {
     margin-top: 30px;
 }
 
+/* Inputs do checkout */
 .checkout input,
 .checkout select {
     padding: 15px;
@@ -565,10 +543,7 @@ article h3 {
     color: white;
 }
 
-/* =========================================================
-   BOTÃO WHATSAPP
-========================================================= */
-
+/* Botão para enviar pedido no WhatsApp */
 .enviar-whatsapp {
     background: linear-gradient(45deg, #00c853, #00e676);
 
@@ -589,16 +564,14 @@ article h3 {
     transition: 0.3s;
 }
 
+/* Efeito do botão WhatsApp */
 .enviar-whatsapp:hover {
     transform: scale(1.03);
 
     box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4);
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
-
+/* Rodapé do site */
 footer {
     text-align: center;
 
@@ -615,10 +588,7 @@ footer {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* =========================================================
-   RESPONSIVO
-========================================================= */
-
+/* Ajustes para celular */
 @media (max-width: 768px) {
 
     body {

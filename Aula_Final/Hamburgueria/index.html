@@ -2,16 +2,18 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Brasa Burguer</title>
+
 </head>
 
 <body>
-
-
-    <!-- CARRINHO FLUTUANTE -->
 
     <div class="carrinho-flutuante" onclick="abrirCarrinho()">
 
@@ -21,22 +23,29 @@
 
     </div>
 
-    <!-- OVERLAY -->
-
     <div class="overlay" id="overlay"></div>
 
-
     <header class="cabecalho" id="cabecalho">
+
         <h1>Hamburgueria Brasa Burguer</h1>
+
         <p><strong>O sabor que conquista!</strong></p>
-        <p>Seja bem-vindo à Brasa Burguer, a melhor hamburgueria da região, com hambúrgueres frescos e preparados com
-            muito amor.</p>
+
+        <p>
+            Seja bem-vindo à Brasa Burguer, a melhor hamburgueria da região,
+            com hambúrgueres frescos e preparados com muito amor.
+        </p>
 
         <nav>
+
             <a href="#sobre-nos">Sobre Nós</a>
+
             <a href="#combos">Combos</a>
+
             <a href="#avaliacao">Avaliações</a>
+
             <a href="#contatos">Contatos</a>
+
         </nav>
 
     </header>
@@ -45,36 +54,32 @@
 
         <h2>Sobre Nós:</h2>
 
-        <p>A nossa <strong>Hamburgueria Brasa Burguer</strong> nasceu em 2026, como parte de um projeto desenvolvido
-            no
-            curso de Web Design da Vocação,
+        <p>
+            A nossa <strong>Hamburgueria Brasa Burguer</strong>
+            nasceu em 2026, como parte de um projeto desenvolvido
+            no curso de Web Design da Vocação,
             unindo criatividade, tecnologia e paixão por hambúrgueres.
         </p>
 
-        <p>Criamos este espaço com o objetivo de oferecer uma experiência moderna e prática, onde o cliente pode
-            conhecer nossos produtos
-            e montar seu pedido de forma simples e rápida. Cada detalhe do site foi pensado para proporcionar
-            facilidade
-            de navegação e um visual atrativo.
+        <p>
+            Criamos este espaço com o objetivo de oferecer
+            uma experiência moderna e prática,
+            onde o cliente pode conhecer nossos produtos
+            e montar seu pedido de forma simples e rápida.
         </p>
 
-        <p>Mesmo sendo um projeto acadêmico, buscamos transmitir a essência de uma hamburgueria real: qualidade,
-            sabor e
-            dedicação. Nossos hambúrgueres
-            foram idealizados com combinações criativas, ingredientes selecionados e aquele toque especial que faz
-            toda
-            a diferença.
+        <p>
+            Mesmo sendo um projeto acadêmico,
+            buscamos transmitir a essência de uma hamburgueria real:
+            qualidade, sabor e dedicação.
         </p>
 
-        <p>Este projeto representa não apenas uma hamburgueria virtual, mas também o aprendizado, o esforço e a
-            evolução
-            no mundo do desenvolvimento Web Design
+        <p>
+            Este projeto representa não apenas uma hamburgueria virtual,
+            mas também aprendizado, esforço e evolução no desenvolvimento Web.
         </p>
-
 
     </section>
-
-    <!-- CARDÁPIO -->
 
     <section id="combos">
 
@@ -190,7 +195,89 @@
 
     </section>
 
-    <!-- CARRINHO -->
+    <section class="avaliacao" id="avaliacao">
+
+        <h2>Avaliações dos Clientes</h2>
+
+        <div class="cards-container">
+
+            <article class="card">
+
+                <img src="img/cliente1.jpg">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "O melhor hambúrguer que já comi!
+                        Sabor incrível e atendimento excelente."
+                    </p>
+
+                    <span>- João Silva</span>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/cliente2.jpg">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐</p>
+
+                    <p>
+                        "Ótima qualidade e entrega rápida.
+                        Recomendo para quem ama um bom hambúrguer."
+                    </p>
+
+                    <span>- Maria Oliveira</span>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/cliente3.jpg">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>
+                        "A combinação de sabores é perfeita!
+                        O X-Bacon é simplesmente divino."
+                    </p>
+
+                    <span>- Carlos Pereira</span>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <img src="img/cliente4.jpg">
+
+                <div class="avaliacao-item">
+
+                    <p>⭐⭐⭐⭐</p>
+
+                    <p>
+                        "Adorei a experiência!
+                        O site é fácil de usar e os hambúrgueres são deliciosos."
+                    </p>
+
+                    <span>- Ana Costa</span>
+
+                </div>
+
+            </article>
+
+        </div>
 
     <section class="carrinho-lateral" id="carrinho">
 
@@ -216,8 +303,6 @@
 
         </div>
 
-        <!-- CHECKOUT -->
-
         <div class="checkout" id="checkout">
 
             <input type="text" id="nome" placeholder="Seu nome">
@@ -233,10 +318,15 @@
             <input type="text" id="bairro" placeholder="Bairro">
 
             <select id="pagamento">
+
                 <option>Forma de pagamento</option>
+
                 <option>Pix</option>
+
                 <option>Cartão</option>
+
                 <option>Dinheiro</option>
+
             </select>
 
             <button class="enviar-whatsapp" onclick="enviarWhatsapp()">
@@ -247,8 +337,6 @@
 
     </section>
 
-    <!-- CONTATOS -->
-
     <footer id="contatos">
 
         <p>📞 (11) 99932-1206</p>
@@ -257,179 +345,7 @@
 
     </footer>
 
-    <!-- SCRIPT -->
-
-    <script>
-
-        let total = 0;
-        let quantidade = 0;
-
-        let pedidos = [];
-
-        function adicionarCarrinho(nome, preco) {
-
-            pedidos.push({ nome, preco });
-
-            quantidade++;
-
-            total += preco;
-
-            const carrinho =
-                document.getElementById("itens-carrinho");
-
-            const item = document.createElement("div");
-
-            item.classList.add("item-carrinho");
-
-            item.innerHTML = `
-                <span>${nome}</span>
-
-                <div>
-                    <strong>R$ ${preco.toFixed(2)}</strong>
-
-                    <button class="remover">✖</button>
-                </div>
-            `;
-
-            carrinho.appendChild(item);
-
-            atualizarCarrinho();
-
-            animarCarrinho();
-
-            item.querySelector(".remover")
-                .addEventListener("click", () => {
-
-                    item.remove();
-
-                    quantidade--;
-
-                    total -= preco;
-
-                    atualizarCarrinho();
-                });
-        }
-
-        function atualizarCarrinho() {
-
-            document.getElementById("total")
-                .innerHTML = `R$ ${total.toFixed(2)}`;
-
-            document.getElementById("contador-flutuante")
-                .innerHTML = quantidade;
-        }
-
-        function abrirCarrinho() {
-
-            document.getElementById("carrinho")
-                .classList.add("ativo");
-
-            document.getElementById("overlay")
-                .classList.add("ativo");
-        }
-
-        function fecharCarrinho() {
-
-            document.getElementById("carrinho")
-                .classList.remove("ativo");
-
-            document.getElementById("overlay")
-                .classList.remove("ativo");
-        }
-
-        function animarCarrinho() {
-
-            const carrinho =
-                document.querySelector(".carrinho-flutuante");
-
-            carrinho.style.transform = "scale(1.15)";
-
-            setTimeout(() => {
-                carrinho.style.transform = "scale(1)";
-            }, 200);
-        }
-
-        function abrirCheckout() {
-
-            document.getElementById("checkout")
-                .style.display = "flex";
-        }
-
-        // API CEP
-
-        document.getElementById("cep")
-            .addEventListener("blur", async () => {
-
-                const cep =
-                    document.getElementById("cep")
-                        .value.replace("-", "");
-
-                const dados =
-                    await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-                        .then(res => res.json());
-
-                document.getElementById("rua")
-                    .value = dados.logradouro;
-
-                document.getElementById("bairro")
-                    .value = dados.bairro;
-            });
-
-        // WHATSAPP
-
-        function enviarWhatsapp() {
-
-            const nome =
-                document.getElementById("nome").value;
-
-            const telefone =
-                document.getElementById("telefone").value;
-
-            const rua =
-                document.getElementById("rua").value;
-
-            const numero =
-                document.getElementById("numero").value;
-
-            const bairro =
-                document.getElementById("bairro").value;
-
-            const pagamento =
-                document.getElementById("pagamento").value;
-
-            let mensagem =
-                `🍔 *NOVO PEDIDO - BRASA BURGUER*%0A%0A`;
-
-            pedidos.forEach(item => {
-
-                mensagem +=
-                    `• ${item.nome} - R$ ${item.preco.toFixed(2)}%0A`;
-            });
-
-            mensagem +=
-                `%0A💰 *Total:* R$ ${total.toFixed(2)}`;
-
-            mensagem +=
-                `%0A%0A👤 *Cliente:* ${nome}`;
-
-            mensagem +=
-                `%0A📞 *Telefone:* ${telefone}`;
-
-            mensagem +=
-                `%0A🏠 *Endereço:* ${rua}, ${numero} - ${bairro}`;
-
-            mensagem +=
-                `%0A💳 *Pagamento:* ${pagamento}`;
-
-            const numeroLoja = "11999321206";
-
-            window.open(
-                `https://wa.me/${numeroLoja}?text=${mensagem}`,
-                "_blank"
-            );
-        }
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
